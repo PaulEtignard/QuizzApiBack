@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class question {
+- intitule:string
+}
+
+class theme{
+- intitule : string
+}
+
+class reponse{
+intitule : string
+isCorrect : boolean
+}
+
+question"0..*"--"1..1"theme
+question"1..*"--"1..1"reponse
+@enduml
